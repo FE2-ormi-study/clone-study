@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+body {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+
+  background: #fffaf0;
+}
+.header {
+  background-color: white;
+  width: 1440px;
+  height: 120px;
+  display: flex;
+}
+
+.headercontent {
+  width: 1224px;
+  height: 120px;
+  margin: 22px 0 0 108px;
+  display: flex;
+}
+.headerlogo {
+  width: 187px;
+  height: 75px;
+  left: 0px;
+  top: 0px;
+}
+.newtext {
+  position: absolute;
+  margin: 20px 0 0 1100px;
+  text-decoration: none;
+  color: black;
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.mainlogo {
+  width: 249.6px;
+  height: 120px;
+  margin: 0 0 20px 0;
+}
+
+.formbox {
+  margin: 0 0 0 524px;
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+}
+.main01 {
+  font-family: "Pretendard-Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #29363d;
+  text-decoration: underline 2px #ff4f6e;
+  padding: 71px 0 20px 0;
+}
+
+#email,
+#pw,
+#nick {
+  width: 392px;
+  height: 48px;
+  margin: 5px 0 10px 0;
+  background: #ffffff;
+  border: 0px;
+  border-bottom: 1px solid #677880;
+  border-radius: 4px 4px 0px 0px;
+}
+.highlight {
+  background: linear-gradient(pink 0 100%);
+  background-position: 0 calc(100% - 2px);
+  background-size: 100% 14px;
+  background-repeat: no-repeat;
+}
+
+.joinbutton {
+  width: 402px;
+  height: 49px;
+  background-color: #29363d;
+  color: #f4f5f5;
+  font-family: "Pretendard-Regular";
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.footer {
+  font-size: 12px;
+  font-family: "Pretendard-Regular";
+  color: #677880;
+  margin-top: 30px;
+  text-align: center;
+}
