@@ -47,11 +47,6 @@ body {
 .newtext {
   position: absolute;
   margin: 20px 0 0 1100px;
-  text-decoration: none;
-  color: black;
-  font-family: "Pretendard-Regular";
-  font-size: 14px;
-  line-height: 16.8px;
 }
 
 .mainlogo {
