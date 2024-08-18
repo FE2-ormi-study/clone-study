@@ -153,6 +153,14 @@ body {
   background-color: #fffaf0;
 }
 
+.quoteend01 {
+  background-color: ;
+  width: 80;
+  height: 40;
+  position: absolute;
+  margin: 300px 0 0 660px;
+  background-color: #fffaf0;
+}
 .box1 {
   box-sizing: border-box;
   position: absolute;
