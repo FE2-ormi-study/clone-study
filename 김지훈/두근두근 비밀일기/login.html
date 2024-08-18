@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | 두근두근 비밀일기</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+</head>
+<body class="login-view">
+    <header>
+        <div class="logo">
+          <a href=""
+            ><img src="./src/images/logo.svg" alt="두근두근 비밀일기"
+          /></a>
+        </div>
+        <div class="user-info">
+          <ul>
+            <li class="logout">
+              <button onclick="window.location.href = './join.html'" class="flex flex-row bold"
+                ><img src="src/images/icon/icon-join.svg" />회원가입</button
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+    <main class="flex flex-col flex-center">
+        <h2 class="flex flex-col flex-center"><img class="logo" src="./src/images/logo.svg" alt="두근두근 비밀일기"><span class="darknavy underline">로그인</span></h2>
+        <form class="flex flex-col" action="./main.html">
+            <label for="email">이메일</label>
+            <input id="email" type="email">
+            <label for="password">비밀번호</label>
+            <input id="password" type="password">
+            <button class="darknavy-bg" type="submit">로그인</button>
+          </form>    </main>
+    <footer><p class="gray">Copyright 2023. WENIV All rights reserved.</p></footer>
+
+</body>
+</html>

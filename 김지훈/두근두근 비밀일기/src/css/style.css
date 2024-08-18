@@ -1,0 +1,412 @@
+@import url(reset.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+html,
+* {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #29363d;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffaf0;
+}
+
+body.join-view, body.login-view {
+  align-items: center;
+}
+
+header,
+main,
+footer,
+article,
+section,
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+body > header,
+main {
+  flex-direction: row;
+  justify-content: center;
+  padding: 22px 108px;
+}
+
+body > header {
+  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  height: 120px;
+}
+
+
+.diary-view main {
+  padding: 0px 108px;
+  height: calc(100vh - 120px);
+}
+
+.login-view main, .join-view main {
+  padding: 71px 0 52px;
+}
+
+.login-view h2 span, .join-view h2 span {
+  margin: 29px 0 40px;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: Pretendard;
+  line-height: 28.64px;
+  height: 29px;
+
+}
+
+.underline {
+  /* text-decoration: 2px underline #ff4f6e; */
+  border-bottom: 2px solid #ff4f6e;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+.underline::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 11px;
+  background-color: #ff4f6e;
+  left: 0;
+  bottom: 0;
+  opacity: 20%;
+  z-index: -1;
+}
+
+.underline {
+  /* text-decoration: 2px underline #ff4f6e; */
+  border-bottom: 2px solid #ff4f6e;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+.diary-view .underline {
+  border-bottom: none;
+  height: 8px;
+}
+
+.diary-view .underline::before {
+  height: 8px;
+  opacity: 80%;
+}
+
+.login-view form {
+  width: 392px;
+  height: 242px;
+}
+.join-view form {
+  width: 392px;
+  height: 339px;
+}
+
+.login-view .logo, .join-view .logo {
+  width: 249.6px;
+  height: 120px;
+}
+
+.login-view form label, .join-view form label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  color: #29363d
+}
+
+.login-view form input, .join-view form input {
+  height: 48px;
+  border: 0;
+  border-bottom: 1px solid #677880;
+  border-radius: 4px 4px 0 0;
+  margin: 8px 0 24px 0;
+
+}
+
+.login-view form button, .join-view form button{
+  width: 392px;
+  height: 48px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  }
+
+.bold {
+  font-weight: 700;
+}
+
+.darknavy {
+  color: #29363d;
+}
+
+.darknavy-bg {
+  background-color: #29363d;
+  color: #f4f5f5;
+}
+
+.gray {
+  color: #677880;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info .welcome {
+  margin: 0 16px;
+}
+
+.user-info.divide li:last-child::before {
+  content: "";
+  display: flex;
+  width: 1px;
+  height: 16px;
+  background: #d8ddde;
+  margin: 0 8px;
+}
+
+.user-info,
+.user-info ul,
+.user-info li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info button {
+  align-items: center;
+  border: none;
+  background: none;
+  height: 40px;
+  font-size: 0.875rem;
+  padding: 4px 20px 4px 10px;
+  color: #5a6a72;
+}
+
+.join-view .user-info button {
+  width: 103px;
+}
+.login-view .user-info button {
+  width: 115px;
+}
+
+
+
+.user-info button img {
+  margin-right: 4px;
+}
+
+
+.write {
+  width: 416px;
+  margin-right: 39px;
+}
+
+.write form {
+  width: 416px;
+}
+
+.write input,
+.write textarea {
+  font-size: 16px;
+}
+
+.write input#title {
+  width: 100%;
+  height: 48px;
+  margin: 16px 0;
+  border: none;
+  border-bottom: 1px solid #677880;
+  border-radius: 4px 4px 0px 0px;
+  padding: 12px 15px;
+}
+
+.write textarea#content {
+  width: 100%;
+  height: 360px;
+  padding: 14px 16px;
+  border: 1px solid #677880;
+  border-radius: 4px;
+}
+
+.write input[type="submit"] {
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #29363d;
+  font-size: 16px;
+  color: #f4f5f5;
+}
+
+.write {
+  padding-top: 56px;
+}
+
+.write-area::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 79, 111, 0.5);
+}
+
+.view-area {
+  overflow-y: scroll;
+  margin-left: 39px;
+  padding-top: 78px;
+}
+
+.view-area .date {
+  font-size: 12px;
+  text-align: right;
+}
+
+.view-area header {
+  margin-top: 55px;
+}
+
+.view-area header h3 {
+  font-size: 16px;
+}
+
+.view-area article > p {
+  margin-top: 12px;
+  font-size: 14px;
+  padding-bottom: 60px;
+  line-height: 19.6px;
+  text-align: justify;
+}
+
+.view-area article {
+  width: 728px;
+  border: 1px solid #677880;
+  border-top: 4px solid #677880;
+}
+
+.view-area article::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #677880;
+  margin-top: 4px;
+}
+
+.view-area article header,
+.view-area article > p {
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+#quote-start,
+#quote-end {
+  width: 100%;
+  height: 0px;
+}
+
+#quote-start::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  background-color: #fffaf0;
+  background-image: url(../images/quote-start.png);
+  top: -25px;
+  left: 30px;
+  margin-bottom: -40px;
+}
+
+#quote-end {
+  justify-content: flex-end;
+}
+
+#quote-end::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  background-color: #fffaf0;
+  background-image: url(../images/quote-end.png);
+  top: -23px;
+  left: -30px;
+  margin-bottom: -40px;
+}
+
+.view-area ol li {
+  margin-bottom: 72px;
+}
+
+footer {
+  width: 100vw;
+  margin-bottom: 307px;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 1439px) {
+  .diary-view main {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .write-area::after {
+    display: none;
+  }
+  
+  .write {
+    margin-right: 0;
+  }
+
+  .view-area {
+    margin-left: 0;
+    overflow: none;
+  }
+}
