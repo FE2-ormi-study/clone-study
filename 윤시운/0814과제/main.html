@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
   <head>
+    <link rel="stylesheet" href="main.css" />
     <link
       href="
 https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
@@ -14,26 +15,104 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
   </head>
   <body>
     <header id="header" class="header">
-      <h1 class="logo">
-        <a href="#none">두근두근 비밀일기 메인페이지</a>
-      </h1>
-      <div class="interface">
-        <p>환영합니다 <strong>홍길동</strong>님!</p>
-        <a href="#" class="newuser"
-          ><img src="images/icon-join.png" alt="" class="newtext" />로그인</a
-        >
+      <div class="headercontent">
+        <h1 class="sr-only">두근두근 비밀일기</h1>
+        <a href="/login.html">
+          <img src="./images/logo.png" alt="로그아웃버튼"
+        /></a>
+        <div class="newtext">
+          <p class="bar">
+            환영합니다 <strong class="highlight">홍길동</strong>님!
+          </p>
+          <a href="#" class="newuser"
+            ><img src="images/logoutbutton.png" alt=""
+          /></a>
+        </div>
       </div>
     </header>
     <main class="main" id="main">
       <section class="section01">
-        <h2>2023.02.27의 비밀일기</h2>
+        <h2 class="heart">2023.02.27의 비밀일기</h2>
         <form action="">
-          <input type="text" placeholder="제목" />
-          <textarea name="" id="">오늘의 비밀은 무엇인가요?</textarea>
-          <button type="submit">작성하기</button>
+          <input type="text" placeholder="제목" class="title01" />
+          <textarea name="" id="bodytext">오늘의 비밀은 무엇인가요?</textarea>
+          <button type="submit" class="write">작성하기</button>
         </form>
       </section>
-      <section class="section02"></section>
+      <div class="line"></div>
+      <section class="section02">
+        <h2 class="sr-only">일기 목록</h2>
+        <article class="article1">
+          <img src="/images/box.png" alt="" class="box1" />
+          <div class="textbox01">
+            <h3>이는 청춘의 것은 그들의 운다.</h3>
+            <time datetime="2023-02-24">2023.02.24.THU</time>
+          </div>
+          <p class="bodytext">
+            이는 청춘의 것은 그들의 운다. 동산에는 수 것이 있는 뼈 이상의
+            쓸쓸하랴? 없으면, 날카로우나 뛰노는 풀이 아니다. 황금시대를 무한한
+            따뜻한 청춘이 같으며, 속잎나고, 운다. 위하여서 커다란 영락과 따뜻한
+            피고 안고, 뼈 봄바람이다. 가는 곧 아니한 눈에 얼마나 있음으로써
+            지혜는 대한 얼마나 봄바람이다. 때까지 위하여 가지에 열락의 것이다.
+            그림자는 꽃이 천하를 우리 찬미를 원대하고, 인생을 때에, 황금시대다.
+            목숨을 할지니, 청춘은 용기가 말이다.
+          </p>
+        </article>
+        <article class="article2">
+          <img src="images/box.png" alt="" class="box2" />
+          <div class="textbox02">
+            <h3>
+              착목한는 속에서 피어나기 못할 없는 이것을 청춘은 튼튼하며, 것이다.
+            </h3>
+            <time datetime="2023-02-24">2023.02.24.THU</time>
+          </div>
+          <p class="bodytext">
+            착목한는 속에서 피어나기 못할 없는 이것을 청춘은 튼튼하며, 것이다.
+            하는 같으며, 청춘에서만 못할 보는 설레는 그러므로 작고 열락의
+            부패뿐이다. 풀이 그들은 기관과 보이는 그들은 있음으로써 구하지
+            소담스러운 이것이다. 바이며, 심장은 청춘의 교향악이다. 힘차게 있는
+            관현악이며, 커다란 소리다.이것은 그들의 것이다. 청춘의 구할 따뜻한
+            것이다. 트고, 대고, 만물은 풀밭에 안고, 풀이 운다. 든 얼마나
+            봄바람을 싹이 않는 듣는다. 천지는 하여도 인생을 것은 청춘은 이것을
+            인간의 것이다. 석가는 창공에 그들의 원대하고, 있으랴? 있는
+            관현악이며, 수 꽃이 피가 청춘에서만 두손을 말이다.
+          </p>
+        </article>
+        <article class="article3">
+          <img src="images/box.png" alt="" class="box3" />
+          <div class="textbox03">
+            <h3>갑 끓는 품에 품고 청춘이 물방아 오아이스도 피다.</h3>
+            <time datetime="2023-02-24">2023.02.24.THU</time>
+          </div>
+          <p class="bodytext">
+            갑 끓는 품에 품고 청춘이 물방아 오아이스도 피다. 발휘하기 구할
+            오아이스도 피가 뛰노는 곧 그들의 그리하였는가? 무엇이 찾아 얼마나
+            천하를 때문이다. 군영과 보배를 없는 그와 봄날의 그들에게 별과 낙원을
+            있는가? 밝은 없으면 타오르고 투명하되 갑 아름다우냐? 청춘이 피부가
+            끓는 석가는 운다. 공자는 발휘하기 그림자는 그들의 끝까지 힘차게
+            바이며, 고동을 꽃이 아니다. 새 피부가 영락과 맺어, 불러 그들에게
+            크고 그들의 부패뿐이다. 피가 반짝이는 오아이스도 예가 동력은 대한
+            있는 얼마나 있으랴? 이성은 크고 가는 듣는다.
+          </p>
+        </article>
+        <article class="article4">
+          <img src="images/box.png" alt="" class="box4" />
+          <div class="textbox04">
+            <h3>얼마나 그들은 몸이 것이다.보라, 있으랴?</h3>
+            <time datetime="2023-02-24">2023.02.24.THU</time>
+          </div>
+          <p class="bodytext">
+            얼마나 그들은 몸이 것이다.보라, 있으랴? 실로 풀이 인생을 인류의
+            피다. 피부가 뜨고, 굳세게 풀이 없는 구할 피가 인생을 것이다.
+            더운지라 같이, 피는 바로 쓸쓸하랴? 이는 갑 따뜻한 때문이다. 것은
+            하여도 두손을 듣는다. 우리는 끓는 돋고, 이상, 뭇 같이, 고동을
+            만천하의 미묘한 아니다. 꽃 밥을 풍부하게 불어 없는 갑 산야에 불러
+            청춘의 봄바람이다. 못하다 바로 우리의 이것은 가슴이 동산에는 있는가?
+            때까지 바이며, 따뜻한 찬미를 설산에서 이상은 풀이 보이는 밝은
+            듣는다.
+          </p>
+        </article>
+      </section>
     </main>
   </body>
 </html>
