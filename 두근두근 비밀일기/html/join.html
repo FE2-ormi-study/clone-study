@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/join.css" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header-wrap">
+        <header class="header">
+          <h1>
+            <a class="logo" href="./main.html">
+              <img src="../assets/logo.svg" alt="두근두근 비밀일기" />
+            </a>
+          </h1>
+          <a class="a-login" href="./login.html">
+            <img class="user-img" src="../assets/user.svg" alt="" />
+            로그인
+          </a>
+        </header>
+      </div>
+      <main>
+        <h2 class="main-title">
+          <img
+            class="main-title-logo"
+            src="../assets/logo.svg"
+            alt=""
+          />회원가입
+        </h2>
+        <form class="form" action="post">
+          <label class="label-input" for="user-email">이메일</label>
+          <input class="input" type="email" name="user-email" id="user-email" />
+          <label class="label-input" for="user-pw">비밀번호</label>
+          <input class="input" type="password" name="user-pw" id="user-pw" />
+          <label class="label-input" for="user-nickname">닉네임</label>
+          <input
+            class="input"
+            type="text"
+            name="user-nickname"
+            id="user-nickname"
+          />
+          <button class="btn-submit" type="submit">회원가입</button>
+        </form>
+      </main>
+      <footer>
+        <p class="copyright">Copyright 2023. WENIV All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.wrap {
+    width :1440px;
+    min-height: 100vh;
+    margin : 0 auto;
+    background: #FFFAF0;
+}
+
+.header-wrap{
+    width : 100%;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE; 
+}
+
+.header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE; 
+    display: flex;
+    margin: 0 auto;   
+    width : 1224px;
+    height : 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 187px;
+    height : 75px;
+}
+
+.ul-user-info {
+    list-style: none; 
+    height: 40px;
+}
+
+.ul-user-info > li { 
+    display: inline-block;
+}
+
+.ul-user-info > li::after {
+    content: "|";
+    color : #dbdbdb;
+}
+
+.ul-user-info > li:last-child::after {
+    content: "";
+}
+
+.user-welcome {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: justify;
+    color : #29363d;
+    padding : 0px 16px 0px 16px;
+}
+
+.user-name { 
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: justify;
+    background: #FF4F6ECC;
+    /*어떻게 반만 채우지..?*/
+}
+
+.btn-logout {
+    border  : none;
+    background-color: transparent;
+    color :  #5A6A72;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: center;
+    padding : 4px 20px 4px 20px;
+}
+
+.btn-logout > span {
+    margin-left: 4px;
+
+}
+
+.btn-logout__img {
+    width : 32px;
+    height: 32px;
+    padding : 7px 6.2px 7px 6.2px;
+    vertical-align: middle;
+}
+
+main {
+    display : flex;
+    width: 1224px;
+    margin: 0 auto;
+}
+
+.diary-form-container {
+    margin : 56px 39px 0px 0px;
+}
+
+.diary-date {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+    color : #29363D;
+    height: 32px;
+    padding : 6.5px 0px 6.5px 0px;
+}
+.diary-title-logo {
+    width :14.12px;
+    height: 14.4px;
+    margin : 0px 9px 0px 9px;
+}
+.form-diary {
+    width : 416px;
+    height: 536px;
+}
+.input-diary-title {
+    width: 100%;
+    height: 48px;
+    border : none;
+    padding: 12px 0px 12px 15px;
+    margin-top: 16px;
+    border-bottom : 1px solid #677880;
+    border-radius: 4px 4px 0px 0px;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.textarea-diary-content {
+    width :100%;
+    height : 360px;
+    margin-top: 16px;
+    padding-top : 14px;
+    padding-left :16px;
+}
+.btn-diary-submit {
+    width : 100%;
+    height : 48px;
+    border-radius: 4px;
+    background-color: #29363D;
+    color : #F4F5F5;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+}
+
+.diary-list-container {
+    margin : 78px 108px 66px 39px;
+}
+.diary-list-container:last-child {
+    margin-bottom: 0px;
+}
+.diary-item {
+    position: relative;
+    margin-bottom: 40px;
+    width: 728px;
+    padding: 8px 0px 6px 0px;
+    border: 1px solid #677880;
+    border-top :4px solid #677880;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: justify;
+}
+
+.diary-item::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top : 4px;
+    border-bottom: 2px solid #677880;
+}
+
+.open-quotation-mark {
+    position: absolute;
+    background: #FFFAF0;
+    width: 80px;
+    height: 40px;
+    left : 30px;
+    top : -27px;
+}
+
+.close-quotation-mark {
+    position: absolute;
+    background: #FFFAF0;
+    width: 80px;
+    height: 40px;
+    right : 30px;
+    bottom : -17px;
+}
+
+.diary-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 48px 0px 48px;
+}
+
+.diary-item-title {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+}
+
+.diary-item-date {
+    font-family: Pretendard;
+    font-size: 12px;
+    line-height: 14.4px;
+    text-align: center;
+    color : #677880;
+
+}
+
+.diary-item-content {
+    width: 100%;
+    color: #5A6A72;
+    padding : 12px 48px 12px 48px ;
+}
+.diary-item-footer {
+    width : 100%;
+    height : 64px;
+}
