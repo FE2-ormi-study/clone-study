@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('./reset.css');
+
+:root {
+    --white: white;
+    --gray: #f2f2f2;
+    --gray-border: #bdbdbd;
+    --gray-txt: #828282;
+    --footer-height: 213px;
+}
+
+* {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.heavy {
+    font-weight: 900;
+}
+.bold {
+    font-weight: 700;
+}
+
+body {
+    align-items: center;
+    min-height: 100dvh;
+    justify-content: space-between;
+}
+
+
+div.group {
+    width: 1060px;
+    border-radius: 15px;
+    border: 2px solid var(--gray-border);
+    margin-top: 86px;
+    background-color: var(--gray);
+    align-items: center;
+}
+
+.group header {
+    align-items: center;
+}
+
+.group header h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 41px;
+    margin-bottom: 37px;
+}
+
+.group header nav {
+    align-items: center;
+}
+
+.group header nav::before {
+    display: block;
+    content: "";
+    width: 650px;
+    height: 2px;
+    background: var(--gray-border);
+}
+
+.group header nav ul {
+    justify-content: space-between;
+    width: 372px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+
+.group main {
+    width: 1003px;
+    border-radius: 15px;
+    border: 2px solid var(--gray-border);
+    margin-bottom: 31px;
+    background-color: var(--white);
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 441px 441px;
+    row-gap: 24px;
+    padding: 26px 27px 30px;
+}
+
+.group main article {
+    border: 1px solid var(--gray-border);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #0000004D;
+    position: relative;
+    overflow: hidden;
+}
+
+.group main article div.content {
+    padding: 19px 20px 0px;
+}
+
+.group main article h3 {
+    font-size: 1em;
+    line-height: 23.17px;
+    margin-top: 11px;
+    margin-bottom: 12px;
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    width: 100%;
+}
+
+.group main article img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid var(--gray-border);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.group main article ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.group main article li {
+    display: flex;
+    height: 19px;
+    font-size: 0.875rem;
+    align-items: center;
+}
+
+.group main article li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.group main article dl {
+    display: flex;
+    flex-direction: row;
+}
+.group main article dt {
+    color: var(--gray-txt);
+    margin-right: 5px;
+}
+
+.group main article dd {
+    display: flex;
+}
+
+.group main article dd.star::before {
+    content: "";
+    display: block;
+    width: 14px;
+    background-image: url("../images/별점이미지.svg");
+    margin-right: 4px;
+}
+
+.group main article .btn-group {
+    width: 100%;
+    height: 41px;
+    background-color: var(--gray);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid var(--gray-border);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.27px;
+}
+
+.group main article .btn-group a {
+    width: 107px;
+    font-weight: 500;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    border-right: 1px solid var(--gray-border);
+    justify-content: center;
+}
+
+.group main article .btn-group button {
+    width: 111px;
+    align-items: center;
+}
+
+.group main article .btn-group button {
+    justify-content: center;
+    margin-top: 9px;
+    margin-bottom: 12px;
+}
+
+
+.group main article .btn-group button::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    background-image: url("../images/play-circle.svg");
+}
+
+footer {
+    width: 100%;
+    height: 213px;
+    margin-top: 135px;
+    background-color: var(--gray);
+    justify-content: center;
+    align-items: center;
+    padding-top: 53px;
+    padding-left: 366px;
+    padding-right: 365px;
+}
+
+footer h2 {
+    font-weight: 700;
+    font-size: 1.375rem;
+}
+
+footer div.flex-row {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
+footer ul li {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.875rem;
+}
+
+footer ul li:nth-child(2) {
+    margin-left: 22px;
+    margin-right: 21px;
+}
+
+footer ul li dt {
+    display: inline;
+}
+
+footer ul li dt::after {
+    content: "\00a0";
+    display: block;
+}
