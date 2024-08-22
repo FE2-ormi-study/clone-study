@@ -1,0 +1,80 @@
+@import url(reset.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+:root {
+  --normal: #343f50;
+  --normal-border: #1a202c;
+  --positive: #439aff;
+  --negative: #eb5757;
+  --disabled: #4a5568;
+}
+
+* {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.row {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.col {
+  width: 103.25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 88px;
+  height: 32px;
+  background-color: var(--normal);
+  border: var(--normal-border);
+  color: #fff;
+  box-shadow: 2px 2px 0px 0px #ffffff1a inset;
+}
+
+button.positive {
+  color: var(--positive);
+}
+
+button.negative {
+  color: var(--negative);
+}
+
+button:hover {
+  text-decoration: underline;
+  color: #fff;
+  box-shadow: 2px 2px 0px 0px #ffffff33 inset;
+}
+
+button.positive:hover {
+  background-color: var(--positive);
+}
+
+button.negative:hover {
+  background-color: var(--negative);
+}
+
+button:active {
+  box-shadow: 2px 2px 0px 0px #00000033 inset;
+}
+
+button[disabled],
+button[disabled]:hover,
+button[disabled]:active {
+  color: var(--disabled);
+  box-shadow: none;
+  text-decoration: none;
+}
