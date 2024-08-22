@@ -5,7 +5,9 @@
     --white: white;
     --gray: #f2f2f2;
     --gray-border: #bdbdbd;
+    --gray-hr: #c4c4c4;
     --gray-txt: #828282;
+    --gray-txt-footer: #4f4f4f;
     --footer-height: 213px;
 }
 
@@ -97,7 +99,7 @@ div.group {
     margin-bottom: 31px;
     background-color: var(--white);
     display: grid;
-    justify-content: space-around;
+    justify-content: space-between;
     grid-template-columns: 220px 220px 220px 220px;
     grid-template-rows: 441px 441px;
     row-gap: 24px;
@@ -210,6 +212,13 @@ div.group {
 }
 
 
+/* .group main article .btn-group button img {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    box-shadow: none;
+    border: none;
+} */
 .group main article .btn-group button::before {
     content: "";
     display: block;
@@ -219,6 +228,8 @@ div.group {
     background-image: url("../images/play-circle.svg");
 }
 
+
+
 footer {
     width: 100%;
     height: 213px;
@@ -226,9 +237,8 @@ footer {
     background-color: var(--gray);
     justify-content: center;
     align-items: center;
-    padding-top: 53px;
-    padding-left: 366px;
-    padding-right: 365px;
+    padding: 53px 365px 38px 366px;
+    font-size: 0.875rem;
 }
 
 footer h2 {
@@ -242,27 +252,54 @@ footer div.flex-row {
     align-items: center;
 }
 
-footer ul li a img {
+footer div.flex-row:first-child {
+    padding-bottom: 42px;
+}
+
+footer div.flex-row:not(:first-child) {
+    padding-top: 36px;
+    border-top: 1px solid var(--gray-border);
+}
+
+footer div:first-child ul li a img {
     width: 24px;
     height: 24px;
 }
 
-footer ul li {
+footer div:first-child ul li {
     display: flex;
     flex-direction: row;
     font-size: 0.875rem;
 }
 
-footer ul li:nth-child(2) {
+footer div:first-child ul li:nth-child(2) {
     margin-left: 22px;
     margin-right: 21px;
 }
 
+footer div:last-child ul li {
+    display: flex;
+    align-items: center;
+    color: var(--gray-txt-footer);
+}
+
+footer div:last-child ul li:not(:last-child)::after {
+    content: "\00a0|\00a0";
+    display: block;
+    font-weight: 400;
+}
+
 footer ul li dt {
-    display: inline;
+    display: inline-flex;
+    font-weight: 700;
 }
 
 footer ul li dt::after {
     content: "\00a0";
     display: block;
+}
+
+footer .copyright {
+    color: var(--gray-txt-footer);
+    line-height: 20.27px;
 }
