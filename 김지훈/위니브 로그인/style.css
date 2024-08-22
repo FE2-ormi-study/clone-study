@@ -1,0 +1,115 @@
+@import url(reset.css);
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.log-in-area {
+  width: 350px;
+  height: 140px;
+  top: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 19px 16px 18px;
+  display: flex;
+  flex-direction: column;
+}
+.log-in-area p {
+  font-size: 12px;
+  line-height: 15.02px;
+  margin: 0px;
+  /* margin-bottom: 16px; */
+}
+.log-in-link {
+  width: 318px;
+  height: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 11px 108px;
+  background-color: #711bff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  font-size: 12px;
+  text-decoration: none;
+}
+.log-in-link a {
+  color: #fff;
+}
+
+.log-in-link a span {
+  margin-top: 3px;
+}
+
+.log-in-link img {
+  width: 64px;
+  height: 18px;
+  margin-right: 4px;
+}
+.find-join a,
+.div-col {
+  font-size: 12px;
+  text-decoration: none;
+  color: #767676;
+  display: flex;
+  align-items: flex-end;
+  line-height: 15.02px;
+}
+
+.div-col {
+  width: 4px;
+  margin: 0 4px;
+}
+.find-join {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.find-join img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+div.find :not(img) {
+  margin-top: 1px;
+}
+
+div.find-join > a > span {
+  height: 15px;
+  margin-top: 1px;
+}
+
+.div-col::after {
+  content: "|";
+  display: block;
+}
+
+.sr-read {
+  display: none;
+}
